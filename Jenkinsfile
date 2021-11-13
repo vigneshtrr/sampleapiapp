@@ -37,7 +37,8 @@ pipeline {
              //          kill -9 $pid
              //  done'''
                bat "D:" 
-               bat "del /S /Q 'D:/output/*.*'"
+               bat "cd D:/output/"
+               bat "del /S /Q '*.*'"
                bat "C:" 
                bat 'cd "C:/ProgramData/Jenkins/.jenkins/workspace/multi_branch_master/bin/Release/netcoreapp3.1/publish/"'
                bat 'Xcopy "*" "D:/output/" /I/K/H/-Y'
