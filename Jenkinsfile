@@ -36,7 +36,7 @@ pipeline {
            //    sh '''for pid in $(lsof -t -i:9090); do
              //          kill -9 $pid
              //  done'''
-            //   bat "D:" 
+               bat "D:" 
             //   bat "cd D:/output/"
              //  bat "del /S /Q '*.*'"
              //  bat "C:" 
